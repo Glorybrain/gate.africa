@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/media/images/CardifyFavicon.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="./assets/media/images/CardifyFavicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./assets/css/cardify.default.css" />
+		<link rel="stylesheet" href="./assets/css/cardify.authentication.css" />
+		<title>Login | Cardify</title>
+	</head>
+	<body>
+		<div class="v-layer-wrapper" id="v-main">
+			<div class="v-hero-image">
+				<img src="./assets/media/images/shopper.png" alt="" class="img-fluid" />
+			</div>
+			<div class="v-outer-parent-container mx-auto pb-5 d-flex flex-column position-relative">
+				<header class="v-auth-header">
+					<figure class="v-logo-image">
+						<img src="./assets/media/svg/cardify-white-variant-logo.svg" alt="" class="img-fluid" />
+					</figure>
+				</header>
+				<div class="v-main-form-container">
+					<form action="" class="v-form">
+						<header class="v-form-header d-flex flex-column align-items-start text-start align-items-center text-md-center mx-auto row-gap-1">
+							<h3 class="v-form-title"><b>Verify Email Addreess</b></h3>
+							<span class="v-subtext d-block" style="line-height: 1.4">
+								Please enter the 4-digit code sent to your email <span style="color: var(--primary-clr)">tundeburemo@gmail.com</span>
+							</span>
+						</header>
+						<div class="v-form-main-container row col-12 m-0 align-items-stretch column-gap-3 row-gap-3 mt-3">
+							<div
+								class="v-form-input-inner v-pin p-0 d-flex align-items-stretch justify-content-between column-gap-4 mt-2 justify-content-md-center">
+								<input type="text" class="form-control" maxlength="1" />
+								<input type="text" class="form-control" maxlength="1" />
+								<input type="text" class="form-control" maxlength="1" />
+								<input type="text" class="form-control" maxlength="1" />
+							</div>
+							<div class="v-action-call-container p-0 mt-4">
+								<button type="button" class="v-action-call" data-bs-toggle="modal" data-bs-target="#sendOTPThrough">
+									<!-- <span class="loadingBtn"></span> -->
+									<span class="text-capitalize fw-medium">Verify Email address</span>
+								</button>
+								<button type="button" class="w-100 d-flex align-items-center justify-content-center mt-2">
+									<small class="d-flex align-items-center column-gap-1">
+										<span>Resend code in</span>
+										<span class="fw-semibold" style="color: var(--primary-clr)">02:00</span>
+									</small>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<!-- modal @::start -->
+			<div class="modal fade" id="sendOTPThrough" tabindex="-1" aria-labelledby="sendOTPThroughLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="sendOTPThroughLabel" style="color: var(--primary-clr)">Send OTP</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div class="v-register-actions-container">
+								<label for="sms" class="v-action form-check">
+									<div class="v-action-content">
+										<span class="v-main-text">SMS</span>
+										<span class="v-subtext">Receive OTP Through SMS</span>
+									</div>
+									<input class="form-check-input" type="radio" name="sendOTP" id="sms" />
+								</label>
+								<label for="phoneCall" class="v-action form-check">
+									<div class="v-action-content">
+										<span class="v-main-text">Phone Call</span>
+										<span class="v-subtext">Receive OTP Through SMS Phone Call</span>
+									</div>
+									<input class="form-check-input" type="radio" name="sendOTP" id="phoneCall" />
+								</label>
+								<label for="Whatsapp" class="v-action form-check">
+									<div class="v-action-content">
+										<span class="v-main-text">Whatsapp</span>
+										<span class="v-subtext">Receive OTP Through Whatsapp</span>
+									</div>
+									<input class="form-check-input" type="radio" name="sendOTP" id="Whatsapp" />
+								</label>
+							</div>
+						</div>
+						<div class="modal-footer border-0 v-action-call-container">
+							<button type="button" class="v-action-call">Confirm</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- modal @::end -->
+		</div>
+		<script src="./assets/js/bootstrap.js"></script>
+		<!-- <script type="module" src="./assets/js/cardify.vue.js"></script> -->
+		<script type="module" src="./assets/js/index.custom.js"></script>
+	</body>
+</html>

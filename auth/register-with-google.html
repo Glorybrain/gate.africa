@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/media/images/CardifyFavicon.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="./assets/media/images/CardifyFavicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./assets/css/cardify.default.css" />
+		<link rel="stylesheet" href="./assets/css/cardify.authentication.css" />
+		<title>Login | Cardify</title>
+	</head>
+	<body>
+		<div class="v-layer-wrapper" v-cloak id="v-main">
+			<div class="v-hero-image">
+				<img src="./assets/media/images/shopper.png" alt="" class="img-fluid" />
+			</div>
+			<div class="v-outer-parent-container mx-auto pb-5 d-flex flex-column position-relative">
+				<header class="v-auth-header">
+					<figure class="v-logo-image">
+						<img src="./assets/media/svg/cardify-white-variant-logo.svg" alt="" class="img-fluid" />
+					</figure>
+				</header>
+				<div class="v-main-form-container">
+					<form action="" class="v-form">
+						<header class="v-form-header d-flex flex-column mx-auto row-gap-1">
+							<h3 class="v-form-title fw-medium">Secure Sign In</h3>
+							<span class="v-subtext">Your security,our <span class="ms-1" style="color: var(--primary-clr)">priority.</span></span>
+						</header>
+						<div class="v-form-main-container row col-12 m-0 align-items-stretch column-gap-3 row-gap-3 mt-3">
+							<div class="v-google-auth p-0">
+								<button type="button" class="d-flex w-100 align-items-center justify-content-center column-gap-2 v-google">
+									<span class="v-icon">
+										<svg
+											enable-background="new 0 0 24 24"
+											id="Layer_1"
+											version="1.1"
+											viewBox="0 0 24 24"
+											xml:space="preserve"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink">
+											<g>
+												<path
+													d="M12,5c1.6167603,0,3.1012573,0.5535278,4.2863159,1.4740601l3.637146-3.4699707   C17.8087769,1.1399536,15.0406494,0,12,0C7.392395,0,3.3966675,2.5999146,1.3858032,6.4098511l4.0444336,3.1929321   C6.4099731,6.9193726,8.977478,5,12,5z"
+													fill="#F44336" />
+												<path
+													d="M23.8960571,13.5018311C23.9585571,13.0101929,24,12.508667,24,12   c0-0.8578491-0.093689-1.6931763-0.2647705-2.5H12v5h6.4862061c-0.5247192,1.3637695-1.4589844,2.5177612-2.6481934,3.319458   l4.0594482,3.204834C22.0493774,19.135437,23.5219727,16.4903564,23.8960571,13.5018311z"
+													fill="#2196F3" />
+												<path
+													d="M5,12c0-0.8434448,0.1568604-1.6483765,0.4302368-2.3972168L1.3858032,6.4098511   C0.5043335,8.0800171,0,9.9801636,0,12c0,1.9972534,0.4950562,3.8763428,1.3582153,5.532959l4.0495605-3.1970215   C5.1484375,13.6044312,5,12.8204346,5,12z"
+													fill="#FFC107" />
+												<path
+													d="M12,19c-3.0455322,0-5.6295776-1.9484863-6.5922241-4.6640625L1.3582153,17.532959   C3.3592529,21.3734741,7.369812,24,12,24c3.027771,0,5.7887573-1.1248169,7.8974609-2.975708l-4.0594482-3.204834   C14.7412109,18.5588989,13.4284058,19,12,19z"
+													fill="#00B060" />
+												<path
+													d="M12,23.75c-3.5316772,0-6.7072754-1.4571533-8.9524536-3.7786865C5.2453613,22.4378052,8.4364624,24,12,24   c3.5305786,0,6.6952515-1.5313721,8.8881226-3.9592285C18.6495972,22.324646,15.4981079,23.75,12,23.75z"
+													opacity="0.1" />
+												<polygon opacity="0.1" points="12,14.25 12,14.5 18.4862061,14.5 18.587492,14.25  " />
+												<path
+													d="M23.9944458,12.1470337C23.9952393,12.0977783,24,12.0493774,24,12   c0-0.0139771-0.0021973-0.0274658-0.0022583-0.0414429C23.9970703,12.0215454,23.9938965,12.0838013,23.9944458,12.1470337z"
+													fill="#E6E6E6" />
+												<path d="M12,9.5v0.25h11.7855721c-0.0157471-0.0825195-0.0329475-0.1680908-0.0503426-0.25H12z" fill="#FFFFFF" opacity="0.2" />
+												<linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="0" x2="24" y1="12" y2="12">
+													<stop offset="0" style="stop-color: #ffffff; stop-opacity: 0.2" />
+													<stop offset="1" style="stop-color: #ffffff; stop-opacity: 0" />
+												</linearGradient>
+												<path
+													d="M23.7352295,9.5H12v5h6.4862061C17.4775391,17.121582,14.9771729,19,12,19   c-3.8659668,0-7-3.1340332-7-7c0-3.8660278,3.1340332-7,7-7c1.4018555,0,2.6939087,0.4306641,3.7885132,1.140686   c0.1675415,0.1088867,0.3403931,0.2111206,0.4978027,0.333374l3.637146-3.4699707L19.8414307,2.940979   C17.7369385,1.1170654,15.00354,0,12,0C5.3725586,0,0,5.3725586,0,12c0,6.6273804,5.3725586,12,12,12   c6.1176758,0,11.1554565-4.5812378,11.8960571-10.4981689C23.9585571,13.0101929,24,12.508667,24,12   C24,11.1421509,23.906311,10.3068237,23.7352295,9.5z"
+													fill="url(#SVGID_1_)" />
+												<path
+													d="M15.7885132,5.890686C14.6939087,5.1806641,13.4018555,4.75,12,4.75c-3.8659668,0-7,3.1339722-7,7   c0,0.0421753,0.0005674,0.0751343,0.0012999,0.1171875C5.0687437,8.0595093,8.1762085,5,12,5   c1.4018555,0,2.6939087,0.4306641,3.7885132,1.140686c0.1675415,0.1088867,0.3403931,0.2111206,0.4978027,0.333374   l3.637146-3.4699707l-3.637146,3.2199707C16.1289062,6.1018066,15.9560547,5.9995728,15.7885132,5.890686z"
+													opacity="0.1" />
+												<path
+													d="M12,0.25c2.9750366,0,5.6829224,1.0983887,7.7792969,2.8916016l0.144165-0.1375122   l-0.110014-0.0958166C17.7089558,1.0843592,15.00354,0,12,0C5.3725586,0,0,5.3725586,0,12   c0,0.0421753,0.0058594,0.0828857,0.0062866,0.125C0.0740356,5.5558472,5.4147339,0.25,12,0.25z"
+													fill="#FFFFFF"
+													opacity="0.2" />
+											</g>
+											<g />
+											<g />
+											<g />
+											<g />
+											<g />
+											<g />
+											<g />
+											<g />
+											<g />
+											<g />
+											<g />
+											<g />
+											<g />
+											<g />
+											<g />
+										</svg>
+									</span>
+									<b>Login with Gogle</b>
+								</button>
+							</div>
+							<div class="v-horizontal-rule">
+								<span class="v-horizontal-rule-text">or</span>
+							</div>
+							<div class="v-form-input p-0">
+								<label for="emailPhone" class="v-form-label">Email or Phone Number</label>
+								<div class="v-form-input-inner p-0">
+									<input type="text" id="emailPhone" class="form-control" placeholder="Enter your email address or phone number" />
+								</div>
+							</div>
+							<div class="v-form-input p-0">
+								<label for="password" class="v-form-label">Password</label>
+								<div class="v-form-input-inner has-pad-right">
+									<input type="password" id="password" class="form-control" data-password-receiver="password" placeholder="Enter a strong password" />
+									<button type="button" class="v-password-toggler" data-toggle-password="password">
+										<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+											<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+												<path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
+												<path d="M2 12c1.6-4.097 5.336-7 10-7s8.4 2.903 10 7c-1.6 4.097-5.336 7-10 7s-8.4-2.903-10-7" />
+											</g>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="v-action-call-container p-0 mt-4">
+								<button type="button" class="v-action-call">
+									<!-- <span class="loadingBtn"></span> -->
+									<span>Log in</span>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<footer class="v-auth-footer d-flex flex-column align-items-center text-center">
+					<span class="v-footer-text">
+						<span class="v-footer-text-item">
+							Don't have an account ?
+							<button type="button" data-bs-toggle="modal" data-bs-target="#registerModal" class="v-login ms-1">Register</button>
+						</span>
+						<span class="v-footer-text-item">
+							<a href="./forgot-password.php" type="button" data-bs-toggle="modal" data-bs-target="#registerModal" class="v-login ms-1"
+								>Forgot password?</a
+							>
+						</span>
+					</span>
+					<div class="d-flex flex-wrap align-items-center column-gap-4 row-gap-2 justify-content-center">
+						<a href="">
+							<figure role="img" class="v-store-link">
+								<img src="./assets/media/images/googleplay-store.png" title="Playstore" alt="" class="img-fluid" />
+							</figure>
+						</a>
+						<a href="">
+							<figure role="img" class="v-store-link">
+								<img src="./assets/media/images/app-store.png" title="Appstore" alt="" class="img-fluid" />
+							</figure>
+						</a>
+					</div>
+				</footer>
+				<!-- modal @::start -->
+				<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="registerModalLabel" style="color: var(--primary-clr)">Register an account</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<div class="v-register-actions-container">
+									<a href="./register.php" class="v-action">
+										<div class="v-action-content">
+											<span class="v-main-text">Register with Email address</span>
+											<span class="v-subtext">Create an account with email address</span>
+										</div>
+										<span class="v-icon">
+											<svg
+												id="Balloon"
+												style="enable-background: new 0 0 32 32"
+												version="1.1"
+												viewBox="0 0 32 32"
+												xml:space="preserve"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink">
+												<style type="text/css">
+													.st0 {
+														fill: #ffce69;
+													}
+													.st1 {
+														fill: #bc923b;
+													}
+													.st2 {
+														fill: #fbc34e;
+													}
+												</style>
+												<g>
+													<path
+														class="st0"
+														d="M29.065,12.59l-12.5,8.565c-0.17,0.116-0.368,0.175-0.565,0.175c-0.199,0-0.398-0.06-0.569-0.178l-12.5-8.661   C2.661,12.305,2.5,11.998,2.5,11.67c0,0,0,0,0,0V29c0,0.553,0.448,1,1,1h25c0.553,0,1-0.447,1-1V11.771   C29.498,12.1,29.336,12.405,29.065,12.59z M17.938,21.681c0.314-0.453,0.937-0.568,1.392-0.253l5.778,4.006   c0.454,0.315,0.567,0.938,0.253,1.392c-0.194,0.28-0.506,0.431-0.823,0.431c-0.196,0-0.395-0.058-0.568-0.178l-5.778-4.006   C17.736,22.757,17.623,22.134,17.938,21.681z M6.883,25.434l5.788-4.006c0.453-0.315,1.077-0.2,1.391,0.253   c0.314,0.454,0.201,1.077-0.253,1.392l-5.788,4.006c-0.173,0.12-0.372,0.178-0.568,0.178c-0.317,0-0.629-0.15-0.823-0.431   C6.315,26.371,6.429,25.748,6.883,25.434z" />
+													<path
+														class="st1"
+														d="M7.453,27.256c0.196,0,0.395-0.058,0.568-0.178l5.788-4.006c0.455-0.314,0.568-0.938,0.253-1.392   c-0.314-0.453-0.938-0.568-1.391-0.253l-5.788,4.006c-0.455,0.314-0.568,0.938-0.253,1.392C6.824,27.105,7.136,27.256,7.453,27.256   z" />
+													<path
+														class="st1"
+														d="M23.969,27.078c0.174,0.12,0.372,0.178,0.568,0.178c0.317,0,0.629-0.15,0.823-0.431   c0.314-0.453,0.201-1.076-0.253-1.392l-5.778-4.006c-0.455-0.315-1.077-0.2-1.392,0.253s-0.201,1.076,0.253,1.392L23.969,27.078z" />
+													<path
+														class="st2"
+														d="M29.43,11.418c-0.062-0.192-0.2-0.346-0.355-0.47L16.608,2.182c-0.343-0.242-0.801-0.243-1.144-0.004   l-12.533,8.67c-0.555,0.38-0.574,1.271,0,1.644l12.5,8.661c0.171,0.118,0.37,0.178,0.569,0.178c0.197,0,0.395-0.059,0.565-0.175   l12.5-8.565C29.44,12.341,29.602,11.835,29.43,11.418z" />
+												</g>
+											</svg>
+										</span>
+									</a>
+									<button type="button" class="v-action">
+										<div class="v-action-content">
+											<span class="v-main-text">Register with Google/Apple account</span>
+											<span class="v-subtext">Sign up using Google or Apple account for a seamless experience</span>
+										</div>
+										<span class="v-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+												<rect width="24" height="24" fill="none" />
+												<path
+													fill="black"
+													d="M22 5.5H9c-1.1 0-2 .9-2 2v9a2 2 0 0 0 2 2h13c1.11 0 2-.89 2-2v-9a2 2 0 0 0-2-2m0 3.67l-6.5 3.33L9 9.17V7.5l6.5 3.31L22 7.5zM5 16.5c0 .17.03.33.05.5H1c-.552 0-1-.45-1-1s.448-1 1-1h4zM3 7h2.05c-.02.17-.05.33-.05.5V9H3c-.55 0-1-.45-1-1s.45-1 1-1m-2 5c0-.55.45-1 1-1h3v2H2c-.55 0-1-.45-1-1" />
+											</svg>
+										</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- modal @::end -->
+			</div>
+		</div>
+		<script src="./assets/js/bootstrap.js"></script>
+		<!-- <script type="module" src="./assets/js/cardify.vue.js"></script> -->
+		<script type="module" src="./assets/js/index.custom.js"></script>
+	</body>
+</html>

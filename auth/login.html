@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/media/images/CardifyFavicon.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="./assets/media/images/CardifyFavicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./assets/css/cardify.default.css" />
+		<link rel="stylesheet" href="./assets/css/cardify.authentication.css" />
+		<title>Login | Cardify</title>
+	</head>
+	<body>
+		<div class="v-layer-wrapper" v-cloak id="v-main">
+			<div class="v-hero-image">
+				<img src="./assets/media/images/shopper.png" alt="" class="img-fluid" />
+			</div>
+			<div class="v-outer-parent-container mx-auto pb-5 d-flex flex-column position-relative">
+				<header class="v-auth-header">
+					<figure class="v-logo-image">
+						<img src="./assets/media/svg/cardify-white-variant-logo.svg" alt="" class="img-fluid" />
+					</figure>
+				</header>
+				<div class="v-main-form-container">
+					<form action="" class="v-form">
+						<header class="v-form-header d-flex flex-column align-items-center text-center col-10 mx-auto row-gap-1">
+							<h3 class="v-form-title"><b>Login to your account</b></h3>
+							<span class="v-subtext">Securely login to Cardify Africa</span>
+						</header>
+						<div class="v-form-main-container row col-12 m-0 align-items-stretch column-gap-3 row-gap-3 mt-3">
+							<div class="v-form-input p-0">
+								<label for="emailPhone" class="v-form-label">Email or Phone Number</label>
+								<div class="v-form-input-inner p-0">
+									<input type="text" id="emailPhone" class="form-control" placeholder="Enter your email address or phone number" />
+								</div>
+							</div>
+							<div class="v-form-input p-0">
+								<label for="password" class="v-form-label">Password</label>
+								<div class="v-form-input-inner has-pad-right">
+									<input type="password" id="password" class="form-control" data-password-receiver="password" placeholder="Enter a strong password" />
+									<button type="button" class="v-password-toggler" data-toggle-password="password">
+										<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+											<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+												<path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
+												<path d="M2 12c1.6-4.097 5.336-7 10-7s8.4 2.903 10 7c-1.6 4.097-5.336 7-10 7s-8.4-2.903-10-7" />
+											</g>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="v-action-call-container p-0 mt-4">
+								<button type="button" class="v-action-call">
+									<!-- <span class="loadingBtn"></span> -->
+									<span>Log in</span>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<footer class="v-auth-footer d-flex flex-column align-items-center text-center">
+					<span class="v-footer-text">
+						<span class="v-footer-text-item"> Don't have an account ? <a href="./register.html" class="v-login ms-1">Register</a> </span>
+						<span class="v-footer-text-item">
+							<a href="./forgot-password.html" class="v-login ms-1">Forgot password?</a>
+						</span>
+					</span>
+					<div class="d-flex flex-wrap align-items-center column-gap-4 row-gap-2 justify-content-center">
+						<a href="">
+							<figure role="img" class="v-store-link">
+								<img src="./assets/media/images/googleplay-store.png" title="Playstore" alt="" class="img-fluid" />
+							</figure>
+						</a>
+						<a href="">
+							<figure role="img" class="v-store-link">
+								<img src="./assets/media/images/app-store.png" title="Appstore" alt="" class="img-fluid" />
+							</figure>
+						</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<script src="./assets/js/bootstrap.js"></script>
+		<script type="module" src="./assets/js/cardify.vue.js"></script>
+		<script type="module" src="./assets/js/index.custom.js"></script>
+	</body>
+</html>
