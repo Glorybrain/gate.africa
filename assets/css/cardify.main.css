@@ -163,7 +163,7 @@
 	object-fit: cover;
 }
 #v-header.v-variant .v-navigation .v-link {
-	font-size: 0.76rem;
+	font-size: 0.95rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -560,7 +560,7 @@
 	transform: scaleX(1);
 }
 #v-cardify .v-cards .v-card-inner .v-link .v-text {
-	font-size: 0.75rem;
+	font-size: 0.9rem;
 	text-transform: capitalize;
 }
 #v-cardify .v-cards .v-card-inner .v-link .v-icon {
@@ -634,7 +634,6 @@
 	margin-right: 1rem;
 }
 #v-faq .v-accordion-container .accordion-button {
-	font-size: .85rem;
 	background-color: transparent;
 	padding: 1.25rem 1rem;
 	border-bottom: 0;
@@ -649,7 +648,7 @@
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #v-faq .v-accordion-container .accordion-body .v-text {
-	font-size: 0.75rem;
+	font-size: 0.9rem;
 	opacity: 0.8;
 }
 .v-container-289fj {
